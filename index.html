@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama AE Barkery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AE BAKERY</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li class="active"><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Daftar Menu</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Selamat Datang!</h2>
+            <p>Selamat datang di website AE Barkery kami. Di sini Anda dapat menemukan informasi tentang daftar menu, kegiatan AE Barkery, dan berbagai informasi lainnya.</p>
+            <div class="foto">
+                <img src="logo.png" alt="">
+                <div class="form">
+                    <h2>Form Pemesanan Kue</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat">Alamat Pengiriman:</label>
+                            <textarea id="alamat" name="alamat" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="jenis_kue">Jenis Kue:</label>
+                            <select id="jenis_kue" name="jenis_kue" required>
+                                <option value="">Pilih Jenis Kue</option>
+                                <option value="kue_coklat">Kue Coklat</option>
+                                <option value="kue_strawberry">Kue Strawberry</option>
+                                <option value="kue_vanila">Kue Vanila</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="jumlah">Jumlah:</label>
+                            <input type="number" id="jumlah" name="jumlah" required>
+                        </div>
+                        <button type="submit">Pesan Kue</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama AE Barkery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-300 text-white p-4">
+        <h1 class="text-2xl font-bold">AE BAKERY</h1>
+    </header>
+    <div class="container mx-auto my-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white shadow-md rounded p-4">
+            <h2 class="text-xl font-bold mb-4 px-3 py-2">Menu</h2>
+            <ul class="space-y-2">
+                <li class="bg-blue-300 text-white rounded px-3 py-2"><a href="index.html">Beranda</a></li>
+                <li class="px-3 py-2 hover:bg-blue-300 rounded"><a href="tentangkami.html">Tentang Kami</a></li>
+                <li class="px-3 py-2 hover:bg-blue-300 rounded"><a href="daftarmenu.html">Daftar Menu</a></li>
+                <li class="px-3 py-2 hover:bg-blue-300 rounded"><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+        <div class="col-span-2 bg-white shadow-md rounded p-4">
+            <h2 class="text-xl font-bold mb-4">Selamat Datang!</h2>
+            <p class="mb-4">Selamat datang di website AE Barkery kami. Di sini Anda dapat menemukan informasi tentang daftar menu, kegiatan AE Barkery, dan berbagai informasi lainnya.</p>
+            <div class="flex items-center justify-between">
+                <img src="logo.png" alt="" class="w-2/4 h-2/4 rounded-full">
+                <div class="bg-white shadow-md rounded p-4 w-full md:w-2/3">
+                    <h2 class="text-xl font-bold mb-4">Form Pemesanan Kue</h2>
+                    <form action="#" method="post" class="space-y-4">
+                        <div>
+                            <label for="nama" class="block font-bold mb-2">Nama:</label>
+                            <input type="text" id="nama" name="nama" class="border rounded p-2 w-full" required>
+                        </div>
+                        <div>
+                            <label for="alamat" class="block font-bold mb-2">Alamat Pengiriman:</label>
+                            <textarea id="alamat" name="alamat" class="border rounded p-2 w-full" required></textarea>
+                        </div>
+                        <div>
+                            <label for="jenis_kue" class="block font-bold mb-2">Jenis Kue:</label>
+                            <select id="jenis_kue" name="jenis_kue" class="border rounded p-2 w-full" required>
+                                <option value="">Pilih Jenis Kue</option>
+                                <option value="kue_coklat">Kue Coklat</option>
+                                <option value="kue_strawberry">Kue Strawberry</option>
+                                <option value="kue_vanila">Kue Vanila</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="jumlah" class="block font-bold mb-2">Jumlah:</label>
+                            <input type="number" id="jumlah" name="jumlah" class="border rounded p-2 w-full" required>
+                        </div>
+                        <button type="submit" class="bg-blue-300 text-white rounded px-4 py-2 hover:bg-blue-600">Pesan Kue</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
